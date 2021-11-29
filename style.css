@@ -1,0 +1,178 @@
+*{
+margin: 0%;
+padding: 0%;
+
+}
+/* navbar */
+.navbar{
+display: flex;
+justify-content: center;
+height: 50px;
+align-items: center;
+position: sticky;
+top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow:  0 0 5px white, 0 0 10px white,0 0 15px white;
+    font-weight: bold;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+top: 0;
+left: 0;
+background: url('images/srivalli.jpg')no-repeat center center/cover;
+height: 700px;
+width: 100%;
+z-index: -1;
+opacity: .8;
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+/* port folio */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+}
+/* ABOUT SECTION*/
+#ABOUT{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#ABOUT h1{
+    margin: 60px;
+    color: yellowgreen;
+    font-style: italic;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.paragraph {
+   font-style: oblique;
+    background-color: white;
+    font-size: 25px;
+    font-style: inherit;
+}
+
+/* services */
+#SERVICES{
+ display: flex;
+ flex-direction: column;
+ background-color: #000000dc;
+
+}
+#SERVICES h1{
+margin: 60px;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color:rgb(247, 223, 14);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    font-size: medium;
+    color: white;
+}
+
+/* CONTACT SECTION */
+#CONTACT{
+    display: flex;
+    flex-direction: column;
+background-color: #000000dc;
+}
+#CONTACT h1{
+    margin: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#Submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+}
+#Submit:hover{
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+
+
+
